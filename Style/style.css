@@ -23,7 +23,7 @@ body {
     align-items: center;
     justify-content: center;
 }
-#wellcometo {
+#welcometo {
     color: white;
     font-size: 80px;
     animation: reveal 5s ease-in forwards ;
