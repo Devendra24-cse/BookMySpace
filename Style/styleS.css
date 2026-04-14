@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100..900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-image: url(/space-background.jpg);
+}
+
+.main {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.585);
+    display: flex;
+    border-radius: 35px;
+}
+
+.signupWindow {
+    padding: 30px 20px;
+    width: 500px;
+    height: 600px;
+    background-color: transparent;
+    backdrop-filter: blur(1px);
+    border: 2px solid white;
+    border-right: none;
+
+    display: flex;
+    flex-direction: column;
+    z-index: 20;
+    border-radius: 35px 0 0 35px;
+}
+.option {
+    height: max-content;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+.option button {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    width: 150px;
+    height: 50px;
+    border-radius: 40px;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+
+.option button.active, 
+.option button:hover, 
+.option button:focus {
+    background-color: #ff0000; 
+    color: white;
+    outline: none;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.8);
+}
+
+/* 3. Form Submit Buttons */
+#signup button, #login button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 150px;
+    height: 45px;
+    border-radius: 40px; /* Changed from 0px to keep the pill shape */
+    background-color: white; /* Standard white button */
+    color: black;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.15s ease-in, color 0.15s ease-in;
+}
+
+/* Form Submit Buttons Hover */
+#signup button:hover, #login button:hover {
+    background-color: red;
+    color: white;
+    box-shadow: 0px 0px 20px rgba(255, 0, 0, 0.663);
+}
+.slideShow {
+    width: 400px;
+    height: 600px;
+    background-color: transparent;
+    border: 2px solid white;
+    border-left: none; 
+    border-radius: 0 35px 35px 0;
+    overflow: hidden; 
+    z-index: 1;
+}
+
+@keyframes fade {
+  from { opacity: 0.5; transform: scale(1);}
+  to { opacity: 1;transform: scale(1.05); }
+}
+
+.detailbox {
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 0px;
+    width: 100%;
+    padding: 0 30px;
+}
+label {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 15px;
+    font-size: 16px;
+    color: red;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+input {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 5px 0 10px 0;
+    height: 40px;
+    border-radius: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: white;
+    padding-left: 15px;
+    font-size: 16px;
+    transition: box-shadow 0.2s ease-in, border 0.2s ease-in;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid red;
+    box-shadow: 0px 0px 10px rgba(255, 0, 0, 0.5);
+}
+#signup button, #login button {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#sigerror, #logerror {
+    color: red;
+    font-size: px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin-top: 10px;
+    text-align: center;
+}
+model-viewer {
+    width: 600px;
+    height: 100vh;
+    transform: translateY(-65px);
+    opacity: 0;
+    animation: reveal 3s ease-in forwards;
+
+}
+@keyframes reveal {
+    0%{
+        display: none;
+        opacity: 0;
+    }
+    100% {
+        display: flex;
+        opacity: 1;
+    }
+}

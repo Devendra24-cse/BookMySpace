@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style/style.css">
+    <title>Book My Space</title>
+</head>
+<body>
+    <div class="container-first">
+    <h3 id="wellcometo">Welcome To</h3>
+    <h1 id="logo">Book My <span style="color: red;">Space</span></h1>
+    <h3 id="statement">World First Space Traveling Agencies</h3>        
+    </div>
+    <div class="butttons">
+        <button id="button-explore">Explore</button>
+        <button id="button-details"><a href="#container-detail" style="text-decoration: none;">About Us</a></button>
+    </div>
+    <div id="container-detail">
+        <h1>Q . WHO we are ? </h1>
+        <h2>A . We just said "World First Space Traveling Agencies". </h2>
+        <h1>Q . WHAT we Do ?</h1>
+        <h2>A . oh This is question now , we make space travel much easier and cheaper. </h2>
+        <h1>Q . HOW we do that ?</h1>
+        <h2>A. Its very  Complex , you dont need to know that. </h2>
+        <h1>Q . WHY Us ? </h1>
+        <h2>A . Because Nobody can do that ! </h2>
+        <h1 class="mission">Our Mission</h1>
+        <h2>"Our mission is to make space travel so easy that one day you can visit<a href="https://en.wikipedia.org/wiki/Olympus_Mons">Olympus Mons</a> and the  <a href="https://en.wikipedia.org/wiki/Rings_of_Saturn">Rings of Saturn </a>without hesitation."</h2>
+    </div>
+
+
+    <script>
+        let exploreBtn = document.getElementById("button-explore");
+        exploreBtn.addEventListener('click', ()=> {
+            window.location.href = "planets.html";
+        })
+    </script>
+
+</body>
+</html>

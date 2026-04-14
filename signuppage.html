@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="Style/styleS.css">
+</head>
+<body>
+    <div class="main">
+        <div class="signupWindow">
+        <div class="option">
+            <button class="signupB" id="signupB">Sign - Up</button>
+            <button class="loginB" id="loginB">Log -In</button>
+        </div>
+        <div class="detailbox" id="signup">
+            <label for="name">Name</label>
+            <input type="text" id="name">
+            <label for="email">Email</label>
+            <input type="email" id="email">
+            <label for="password">Password</label>
+            <input type="password" name="" id="password">
+            <label for="confirmpassword">Confirm Password</label>
+            <input type="password" name="" id="confirmpassword">
+            <p id="sigerror"></p>
+            <button id="submit">Submit</button>
+
+        </div>
+        <div class="detailbox" id="login">
+            <label for="email">Email</label>
+            <input type="email" id="logemail">
+            <label for="password">Password</label>
+            <input type="password" name="" id="logpassword">
+            <p id="logerror"></p>
+            <button id="btn-login">Log In</button> 
+        </div>
+    </div>
+    <div class="slideShow">
+        <model-viewer alt="3d model" src = "3D model/Earth.glb"
+        auto-rotate></model-viewer>
+    </div>    
+    </div>
+
+
+
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.2.0/model-viewer.min.js"></script>
+    <script src="Javascript/jscriptS.js"></script>
+</body>
+</html>
