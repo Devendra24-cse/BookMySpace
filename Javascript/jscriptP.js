@@ -31,20 +31,6 @@ BookingBtns.forEach(button => {
     })
 })
 
-let time = Math.floor(Math.random() * 11) + 5;
-
-let x = setInterval(function() {
-    document.getElementById("liveClock").innerHTML = time;
-
-    time--;
-
-    if (time < 0) {
-        clearInterval(x);
-        document.getElementById("liveClock").innerHTML = "Done";
-    }
-}, 1000);
-
-
 let signupBtn = document.getElementById("button-signup");
 let loginBtn = document.getElementById("button-login");
 
