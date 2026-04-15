@@ -18,7 +18,7 @@ bookingBtn.addEventListener('click',() => {
     if(isagreed.checked){
         console.log("user Agree");
         error.textContent = "";
-        alert("Trip Booked " + "from" + originLocation.value + " to " + destinationLocation.value);
+        alert("Trip Booked " + "From " + originLocation.value + " to " + destinationLocation.value);
     }
     else {
         console.log("user Disagree");
