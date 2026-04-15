@@ -27,7 +27,16 @@ bookingBtn.addEventListener('click',() => {
     }
 
 
+})
 
+let showingTermsBtn = document.getElementById("button-show");
+let closingTermsBtn = document.getElementById("button-close");
 
-    
+let termsWindow = document.getElementById("terms");
+
+showingTermsBtn.addEventListener('click',()=> {
+    termsWindow.style.display = "flex"
+})
+closingTermsBtn.addEventListener('click',()=> {
+    termsWindow.style.display = "none"
 })

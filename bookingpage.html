@@ -20,12 +20,27 @@
                 <h1>To</h1>
                 <input type="text" id="destination" value = " "class="input-location">                
             </div>
-            <div class="TandC"><input type="checkbox" name="" id="TandC"> I agree to the <a href="">Terms and Conditions</a></div>
+            <div class="TandC"><input type="checkbox" name="" id="TandC"> I agree to the <button id="button-show">Terms and Conditions</a></div>
             <div id="error"><p></p></div>
             <div class="buttons"><button id="button-booking">Buy Ticket</button></div>
         </div>        
     </div>
-    <SCript src="Javascript/jscriptB.js"></SCript>
+    <div id="terms">
+        <div class="window-terms">
+            <div class="heading">
+                <h1>Terms And Conditions</h1> <button id="button-close">&#10006</button>               
+            </div>
+            <div class="list-terms">
+                <ol class="list">
+                    <li>You are no longer a civilian traveler; you are legally considered a member of the flight crew. This change ensures you are governed by maritime and space law, which prioritizes mission safety over personal convenience.</li>
+                    <li>You agree that no legal action or "court case" may be brought against the agency for "Natural Accidents," including micrometeoroid strikes, solar flares (Coronal Mass Ejections), or unforeseen equipment fatigue. You acknowledge that space is a "High-Energy Environment" where total safety cannot be guaranteed.</li>
+                    <li>The Mission Commander holds absolute authority. Any refusal to follow a direct command regarding life support, resource rationing, or emergency maneuvers will be documented as Mission Interference and may resolt in legal prosecution or restraint upon return to Earth.</li>
+                    <li>This is due to Superior Solar Conjunction. This happens when the Sun moves directly between Earth and your spacecraft (common on Mars missions). The Sun's massive Ionized Corona interferes with radio waves, causing a "Radio Silence" period where data transmission becomes physically impossible due to electromagnetic interference. You will be effectively "off-grid" until the orbital alignment shifts.</li>
+                </ol>                
+            </div> 
+        </div>
+    </div>
+    <Script src="Javascript/jscriptB.js"></SCript>
     
 </body>
 </html>
